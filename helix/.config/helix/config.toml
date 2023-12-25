@@ -1,0 +1,36 @@
+theme = "hex_toxic"
+
+[editor]
+line-number = "relative"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["position", "position-percentage", "total-line-numbers"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊"
+skip-levels = 0
